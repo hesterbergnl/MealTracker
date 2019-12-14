@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1Xy-32-DFH">
-                                <rect key="frame" x="0.0" y="64" width="414" height="100.5"/>
+                                <rect key="frame" x="10" y="64" width="394" height="100.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZf-rY-4V7">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -25,13 +25,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evA-A9-e1C">
-                                        <rect key="frame" x="0.0" y="28.5" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="394" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ya-22-NjD">
                                         <rect key="frame" x="0.0" y="70.5" width="151" height="30"/>
                                         <state key="normal" title="Set Default Label Text"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afe-wY-6hm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -42,11 +45,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="1Xy-32-DFH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kZy-7j-gLA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Xy-32-DFH" secondAttribute="trailing" id="nur-ef-cE5"/>
-                            <constraint firstItem="1Xy-32-DFH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zPf-bA-SCK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Xy-32-DFH" secondAttribute="trailing" constant="10" id="nur-ef-cE5"/>
+                            <constraint firstItem="1Xy-32-DFH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zPf-bA-SCK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="AZf-rY-4V7" id="LgI-8t-yII"/>
+                        <outlet property="nameTextField" destination="evA-A9-e1C" id="g7Z-bT-IAG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
