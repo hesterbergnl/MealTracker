@@ -14,6 +14,7 @@
 		915C2DDB23A551C40042D942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C2DDA23A551C40042D942 /* Assets.xcassets */; };
 		915C2DDE23A551C40042D942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915C2DDC23A551C40042D942 /* LaunchScreen.storyboard */; };
 		915C2DE923A551C40042D942 /* MealTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C2DE823A551C40042D942 /* MealTrackerTests.swift */; };
+		91AE965023A88139000E3C98 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE964F23A88139000E3C98 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		915C2DE423A551C40042D942 /* MealTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915C2DE823A551C40042D942 /* MealTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTrackerTests.swift; sourceTree = "<group>"; };
 		915C2DEA23A551C40042D942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91AE964F23A88139000E3C98 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				915C2DD123A551C30042D942 /* AppDelegate.swift */,
 				915C2DD323A551C30042D942 /* SceneDelegate.swift */,
 				915C2DD523A551C30042D942 /* ViewController.swift */,
+				91AE964F23A88139000E3C98 /* RatingControl.swift */,
 				915C2DD723A551C30042D942 /* Main.storyboard */,
 				915C2DDA23A551C40042D942 /* Assets.xcassets */,
 				915C2DDC23A551C40042D942 /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91AE965023A88139000E3C98 /* RatingControl.swift in Sources */,
 				915C2DD623A551C30042D942 /* ViewController.swift in Sources */,
 				915C2DD223A551C30042D942 /* AppDelegate.swift in Sources */,
 				915C2DD423A551C30042D942 /* SceneDelegate.swift in Sources */,
